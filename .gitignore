@@ -1,0 +1,64 @@
+#####################################
+# System and dev utility config files
+#####################################
+.DS_Store
+error.log
+access.log
+request.log
+.idea
+*.map
+*.sublime-workspace
+*.sublime-project
+.sass-cache
+composer.lock
+# Do not ignore dist globally, some plugins contain dist files
+/dist
+node_modules
+license.txt
+/public/readme.html
+
+#################################
+# Wordpress environmental configs
+#################################
+/public/.htaccess
+public/wp-config.php
+
+
+#################
+# Wordpress cache
+#################
+/public/wp-content/advanced-cache.php
+/public/wp-content/cache/
+/public/wp-content/wp-cache-config.php
+
+
+###################
+# Wordpress Backups
+###################
+/public/wp-content/backup-db/
+/public/wp-content/backups/
+
+
+###################
+# Wordpress uploads
+###################
+/public/wp-content/uploads
+/public/wp-content/uploads.backup
+
+#####################################
+# Identify potentially malicous files
+#####################################
+!/public/wp-content/uploads/*.php
+!/public/wp-content/uploads/*.exe
+
+###################
+# Wordpress Upgrade
+###################
+/public/wp-content/upgrade/
+
+#####################################
+# Environment generated files
+#####################################
+/log
+/public/sitemap.xml
+/public/robots.txt
