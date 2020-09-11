@@ -1,0 +1,101 @@
+.block-text-column {
+
+    &__image {
+        margin-bottom: $s*3;
+    }
+
+    &__heading {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__subheading {
+        margin-bottom: $s*2;
+    }
+
+    &__cta {
+        margin-bottom: $s*2;
+    }
+}
+
+.content-columns--rounded-shadow {
+    .block-text-column {
+        padding-bottom: $s*1.5;
+
+        &__image {
+            margin-bottom: $s;
+        }
+    }
+}
+
+.icon-left {
+    .block-text-column {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        position: relative;
+
+        @include bp(min-width, $bp-md-min) {
+            padding-left: $s*8;
+        }
+
+        &:first-child {
+            padding-bottom: $s*5;
+
+            @include bp(min-width, $bp-sm-min) {
+                border-right: 1px solid $color--border-separator;
+                padding-bottom: 0;
+                padding-right: $s*4;
+            }
+        }
+
+        &:last-child {
+            @include bp(min-width, $bp-sm-min) {
+                padding-left: $s*2;
+            }
+
+            @include bp(min-width, $bp-md-min) {
+                padding-left: $s*12;
+            }
+
+            .block-text-column__image {
+                @include bp(min-width, $bp-sm-min) {
+                    left: $s*4;
+                }
+            }
+        }
+
+        &.col-1-2 {
+            @include bp(max-width, $bp-xs-max) {
+                width: 100%;
+            }
+        }
+
+        &__image {
+            //text-align: left;
+            margin-bottom: $s;
+
+            @include bp(min-width, $bp-md-min) {
+                position: absolute;
+                left: 0;
+                top: calc(50% - 20px);
+            }
+        }
+
+        &__heading {
+            line-height: 1.3;
+            margin-bottom: $s;
+
+            @include bp(min-width, $bp-md-min) {
+                text-align: left;
+            }
+        }
+
+        &__subheading {
+            font-size: 18px;
+
+            @include bp(min-width, $bp-md-min) {
+                text-align: left;
+            }
+        }
+    }
+}

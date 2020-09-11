@@ -1,8 +1,6 @@
 $max-page-sections-content-width: 960px;
 
 .page-sections {
-    font-family: $font-family--primary;
-
     section {
         text-align: center;
 
@@ -10,6 +8,67 @@ $max-page-sections-content-width: 960px;
             width: $max-page-sections-content-width;
             max-width: 100%;
             margin: auto;
+        }
+    }
+
+    .page-section {
+
+        border-top: 1px solid #ddd;
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &--white {
+            background-color: white;
+        }
+
+        &--light-grey {
+            background-color: #F8F8F8;
+        }
+
+        &--green {
+            background-color: $color--primary;
+            color: white;
+        }
+
+        &--no-padding {
+            padding-bottom: 0;
+        }
+
+        &--no-padding-bottom {
+            padding-bottom: 0;
+        }
+
+        &--no-padding-top {
+            padding-top: 0;
+        }
+
+        &--padding-top-small {
+            padding-top: $s*3;
+        }
+
+        &.no-border-top {
+            border-top: none;
+        }
+
+        .subheading {
+            font-size: 18px;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .show-on-mobile {
+            @include bp(min-width, $bp-xs-min) {
+                display: none;
+            }
+        }
+
+        .show-on-desktop {
+            display: none;
+
+            @include bp(min-width, $bp-xs-min) {
+                display: block;
+            }
         }
     }
 }

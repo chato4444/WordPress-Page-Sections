@@ -34,5 +34,19 @@
             <?php endif; ?>
         <?php endwhile; ?>
     <?php endif; ?>
+
+    <?php
+        /*
+        <div class="row debug">
+            <div class="col-1">Col 1</div>
+            <div class="col-1-2">Col 1/2</div>
+            <div class="col-1-3 offset-1-4">Col 1/3</div>
+            <div class="col-1-4">Col 1/4</div>
+            <div class="col-1-5">Col 1/5</div>
+            <div class="col-5-12">Col 5/12</div>
+            <div class="col-7-12">Col 7/12</div>
+        </div>
+        */
+    ?>
 </main>
 <?php get_footer(); ?>

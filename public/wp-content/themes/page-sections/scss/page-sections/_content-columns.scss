@@ -1,0 +1,41 @@
+.content-columns {
+    padding: $s*8 $s*2;
+
+    &__blocks {
+        display: flex;
+    }
+
+    &__heading {
+        &--no-subheading {
+            margin-bottom: $s*5;
+        }
+    }
+
+    &__subheading {
+        font-family: $font-family--primary;
+        font-size: 18px;
+        margin-bottom: $s*5;
+    }
+
+    &--rounded-shadow {
+        .content-column {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+    }
+
+    &--rounded-border {
+        .content-column {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-bottom: $s*2;
+            overflow: hidden;
+        }
+    }
+
+
+}

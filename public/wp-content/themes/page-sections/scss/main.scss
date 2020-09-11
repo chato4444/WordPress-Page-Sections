@@ -8,9 +8,10 @@
 
 // Global
 @import "global/base";
-@import "global/typography";
-@import "global/forms";
 @import "global/buttons";
+@import "global/forms";
+@import "global/grid";
+@import "global/typography";
 
 // Theme
 @import "global/header";
@@ -20,4 +21,7 @@
 // Page Sections Components (load _section.scss first)
 @import "page-sections/base";
 @import "page-sections/basic-text";
+@import "page-sections/content-columns";
+@import "page-sections/blocks/image-column";
+@import "page-sections/blocks/text-column";
 @import "page-sections/hero";
