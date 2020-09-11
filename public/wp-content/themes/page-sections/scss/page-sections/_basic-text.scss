@@ -1,0 +1,11 @@
+.basic-text {
+    display: flex;
+    font-family: $font-family--primary;
+    justify-content: center;
+    padding: $s*10 $s*3;
+
+    &__column {
+        max-width: $max-read-width;
+        text-align: left;
+    }
+}
