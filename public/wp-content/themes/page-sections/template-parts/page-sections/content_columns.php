@@ -44,7 +44,7 @@ if ( get_sub_field( 'force_equal_heights' ) == 'true' ) {
                      * from this template to included template
                      */
                     ?>
-                    <?php include( locate_template( 'template-parts/page-sections/blocks/' . get_row_layout() . '.php') ); ?>
+                    <?php include( locate_template( Page_Sections::PAGE_SECTIONS_TEMPLATE_PATH . '/blocks/' . get_row_layout() . '.php') ); ?>
                 <?php endif; ?>
             <?php endwhile; ?>
         <?php endif; ?>

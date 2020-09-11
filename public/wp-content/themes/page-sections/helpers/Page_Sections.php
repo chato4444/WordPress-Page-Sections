@@ -1,6 +1,7 @@
 <?php
 
 class Page_Sections {
+    const PAGE_SECTIONS_TEMPLATE_PATH = 'template-parts/page-sections/';
     /**
      * @param $acfField
      *

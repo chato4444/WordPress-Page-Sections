@@ -1,0 +1,18 @@
+.banner-cta {
+    align-content: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: $s*10 $s*2;
+    position: relative;
+
+    &__heading {
+        @extend .page-section__heading;
+        color: white;
+    }
+
+    &__subheading {
+        @extend .page-section__subheading;
+        margin-bottom: $s*5;
+    }
+}
