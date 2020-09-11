@@ -1,0 +1,31 @@
+.block-image-column {
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+.content-columns {
+    &.app-feature {
+        .block-image-column {
+            //float: right;
+        }
+    }
+}
+
+.brand-logos {
+    .block-image-column {
+        lost-column: 1/2 2 $s;
+        margin-bottom: 12px;
+        padding: 0;
+
+        @include bp(min-width, $bp-phone-sm-min) {
+            lost-column: 1/2 2 $s*2;
+            margin-bottom: 24px;
+        }
+
+        @include bp(min-width, $bp-sm-min) {
+            lost-column: 1/4 4 $s*2;
+        }
+    }
+}

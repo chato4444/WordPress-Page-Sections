@@ -389,8 +389,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "section--white": "White",
-                                "section--light-grey": "Light Grey"
+                                "page-section--white": "White",
+                                "page-section--light-grey": "Light Grey"
                             },
                             "default_value": [],
                             "allow_null": 0,
@@ -1264,5 +1264,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1599834045
+    "modified": 1599834046
 }
