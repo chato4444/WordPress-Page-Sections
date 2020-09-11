@@ -6,14 +6,15 @@
     }
 
     &__heading {
+        @extend .page-section__heading;
+
         &--no-subheading {
             margin-bottom: $s*5;
         }
     }
 
     &__subheading {
-        font-family: $font-family--primary;
-        font-size: 18px;
+        @extend .page-section__subheading;
         margin-bottom: $s*5;
     }
 

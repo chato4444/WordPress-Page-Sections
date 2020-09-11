@@ -1,7 +1,10 @@
 .block-text-column {
-
     &__image {
-        margin-bottom: $s*3;
+        margin-bottom: $s*2;
+
+        img {
+            min-width: 40px;
+        }
     }
 
     &__heading {

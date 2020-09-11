@@ -10,65 +10,81 @@ $max-page-sections-content-width: 960px;
             margin: auto;
         }
     }
+}
 
-    .page-section {
+.page-section {
+    &__heading {
+        font-size: $font-size--page-section-heading--mobile;
+        font-weight: 900;
 
-        border-top: 1px solid #ddd;
-
-        &:first-child {
-            border-top: 0;
+        @include bp(min-width, $bp-xs-min) {
+            font-size: $font-size--page-section-heading;
         }
+    }
 
-        &--white {
-            background-color: white;
+    &__subheading {
+        font-size: $font-size--page-section-subheading--mobile;
+
+        @include bp(min-width, $bp-xs-min) {
+            font-size: $font-size--page-section-subheading;
         }
+    }
 
-        &--light-grey {
-            background-color: #F8F8F8;
-        }
+    border-top: 1px solid #ddd;
 
-        &--green {
-            background-color: $color--primary;
-            color: white;
-        }
+    &:first-child {
+        border-top: 0;
+    }
 
-        &--no-padding {
-            padding-bottom: 0;
-        }
+    &--white {
+        background-color: white;
+    }
 
-        &--no-padding-bottom {
-            padding-bottom: 0;
-        }
+    &--light-grey {
+        background-color: #F8F8F8;
+    }
 
-        &--no-padding-top {
-            padding-top: 0;
-        }
+    &--green {
+        background-color: $color--primary;
+        color: white;
+    }
 
-        &--padding-top-small {
-            padding-top: $s*3;
-        }
+    &--no-padding {
+        padding-bottom: 0;
+    }
 
-        &.no-border-top {
-            border-top: none;
-        }
+    &--no-padding-bottom {
+        padding-bottom: 0;
+    }
 
-        .subheading {
-            font-size: 18px;
-            font-family: "Roboto", sans-serif;
-        }
+    &--no-padding-top {
+        padding-top: 0;
+    }
 
-        .show-on-mobile {
-            @include bp(min-width, $bp-xs-min) {
-                display: none;
-            }
-        }
+    &--padding-top-small {
+        padding-top: $s*3;
+    }
 
-        .show-on-desktop {
+    &.no-border-top {
+        border-top: none;
+    }
+
+    .subheading {
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .show-on-mobile {
+        @include bp(min-width, $bp-xs-min) {
             display: none;
+        }
+    }
 
-            @include bp(min-width, $bp-xs-min) {
-                display: block;
-            }
+    .show-on-desktop {
+        display: none;
+
+        @include bp(min-width, $bp-xs-min) {
+            display: block;
         }
     }
 }
