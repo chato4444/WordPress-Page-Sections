@@ -1,0 +1,75 @@
+/* BEGIN colors */
+/**
+ * Separate color values and color intent - allows colors to be modified
+ * in various SCSS files without variable names losing their meaning.
+ */
+// Named Colors
+$color--green: #54AE47;
+$color--dark-green: #387430;
+$color--orange: #ca553a;
+$color--orange-dark: darken($color--orange, 10%);
+
+// Greyscale
+$color--white: #fff;
+$color--black: #000;
+$color--lightest-grey: lighten( $color--black, 90% );
+$color--lighter-grey:lighten( $color--black, 80% );
+$color--light-grey: lighten( $color--black, 70% );
+$color--grey: lighten( $color--black, 50% );
+$color--dark-grey: lighten( $color--black, 30% );
+$color--darker-grey: lighten( $color--black, 20% );
+$color--darkest-grey: lighten( $color--black, 10% );
+
+// Color Intent
+$color--paragraph-text: $color--darker-grey;
+$color--primary: $color--orange;
+$color--cta-active: $color--orange;
+$color--cta-active--hover: $color--orange-dark;
+$color--cta-active-text: $color--white;
+/* END colors */
+
+/* BEGIN fonts */
+$font-family--primary: "Roboto", sans-serif;
+$font-size--heading: 90px;
+$font-size--heading--mobile: 36px;
+$font-size--subheading: 24px;
+$font-size--subheading--mobile: 18px;
+/* END fonts */
+
+/* BEGIN content widths */
+$max-content-width: 1280px;
+$max-read-width: 768px;
+/* END page widths */
+
+/* BEGIN px spacing */
+$s: 10px;
+/* END px spacing */
+
+/* BEGIN transition styles */
+$default-transition-time: 200ms;
+$default-transition-type: ease-in-out;
+/* END transition styles */
+
+/* BEGIN border radius */
+$default-border-radius: 8px;
+/* END border radius */
+
+/* BEGIN breakpoints */
+// 768 is usually wide enough to show columns and normal navigations (sans hamburger menu)
+$bp-xs-min: 600px;
+$bp-xs-max: 767px;
+$bp-sm-min: 768px;
+$bp-sm-max: 991px;
+$bp-md-min: 992px;
+$bp-md-max: 1199px;
+$bp-lg-min: 1200px;
+$bp-xl-min: 1440px;
+
+// Phone breakpoints
+$bp-phone-xs-min: 350px;
+$bp-phone-xs-max: 379px;
+$bp-phone-sm-min: 380px;
+$bp-phone-sm-max: 479px;
+$bp-phone-lg-min: 480px;
+$bp-phone-lg-max: 599px;
+/* END breakpoints */

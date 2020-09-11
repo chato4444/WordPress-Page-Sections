@@ -1,0 +1,88 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    color: $color--paragraph-text;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-phone-xs {
+    display: none;
+
+    @include bp(min-width, $bp-phone-xs-min) {
+        display: inherit;
+    }
+}
+
+.hide-sm {
+    display: none;
+
+    @include bp(min-width, $bp-sm-min) {
+        display: inherit;
+    }
+}
+
+.show-sm {
+    @include bp(min-width, $bp-sm-min) {
+        display: none;
+    }
+}
+
+.show-md {
+    @include bp(min-width, $bp-md-min) {
+        display: none;
+    }
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.max-content-width {
+    max-width: $max-content-width;
+    margin: auto;
+}
+
+// Icon font bullets - requires iconfont set and updated content value
+ul.ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    li {
+        margin: 0;
+        padding: 0 0 $s*2 $s*3;
+        position: relative;
+
+        &:before {
+            //content: "\e911";
+            //font-family: 'iconFont' !important;
+            left: $s*.5;
+            position: absolute;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+body {
+    color: $color--paragraph-text;
+    font-family: $font-family--primary;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    margin: $s 0;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.light-text {
+    color: white;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: white;
+    }
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0 0 $s*2 0;
+
+    @include bp(min-width, $bp-xs-min) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 0 $s*2 0;
+
+    strong {
+        font-weight: 700;
+    }
+
+    &:first-child {
+    }
+}
+
+a {
+    transition: color $default-transition-time $default-transition-type;
+
+    &:link,
+    &:visited {
+        color: #4A90E2;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+strong {
+    font-weight: 700;
+}
+
+.green-text {
+    color: $color--cta-active;
+}
+
+.heading-xl {
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2), 0 4px 24px rgba(0,0,0,0.1);
+
+    @include bp(min-width, $bp-xs-min) {
+        font-size: 48px;
+    }
+
+    @include bp(min-width, $bp-sm-min) {
+        font-size: 90px;
+    }
+}
+
+.heading-lg {
+    font-size: 72px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.heading-md {
+    font-size: 48px;
+}
