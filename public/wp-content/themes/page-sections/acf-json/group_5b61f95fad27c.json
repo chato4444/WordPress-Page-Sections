@@ -73,10 +73,10 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5b61fc96f9fa9",
-                            "label": "Section Name",
-                            "name": "section_name",
-                            "type": "text",
+                            "key": "field_5f5bd08cc9301",
+                            "label": "Base",
+                            "name": "base",
+                            "type": "clone",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -85,11 +85,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "clone": [
+                                "group_5f5b176aef34e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
                         },
                         {
                             "key": "field_5b68683403286",
@@ -108,7 +110,7 @@
                                 "section--white": "White",
                                 "section--light-grey": "Light Grey"
                             },
-                            "default_value": [],
+                            "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
@@ -193,9 +195,7 @@
                                         "col-1-4": "1\/4",
                                         "col-1-5": "1\/5"
                                     },
-                                    "default_value": [
-                                        "col-1-4"
-                                    ],
+                                    "default_value": "col-1-4",
                                     "allow_null": 0,
                                     "multiple": 0,
                                     "ui": 0,
@@ -208,7 +208,7 @@
                                     "label": "Column Offset",
                                     "name": "column_offset",
                                     "type": "select",
-                                    "instructions": "",
+                                    "instructions": "Offsets apply to the left of current element",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -216,13 +216,21 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "choices": [],
-                                    "default_value": [],
+                                    "choices": {
+                                        "no-offset": "None",
+                                        "offset-1-12": "1\/12",
+                                        "offset-1-6": "1\/6",
+                                        "offset-1-4": "1\/4",
+                                        "offset-1-3": "1\/3",
+                                        "offset-5-12": "5\/12",
+                                        "offset-1-2": "1\/2"
+                                    },
+                                    "default_value": false,
                                     "allow_null": 0,
                                     "multiple": 0,
                                     "ui": 0,
-                                    "ajax": 0,
                                     "return_format": "value",
+                                    "ajax": 0,
                                     "placeholder": ""
                                 },
                                 {
@@ -338,10 +346,10 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5b649ef260742",
-                            "label": "Section Name",
-                            "name": "section_name",
-                            "type": "text",
+                            "key": "field_5f5bd0bac9302",
+                            "label": "Base",
+                            "name": "base",
+                            "type": "clone",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -350,30 +358,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5b649ef760743",
-                            "label": "Wrapper Classes",
-                            "name": "wrapper_classes",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "clone": [
+                                "group_5f5b176aef34e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
                         },
                         {
                             "key": "field_5b64c2cee7380",
@@ -392,7 +383,7 @@
                                 "page-section--white": "White",
                                 "page-section--light-grey": "Light Grey"
                             },
-                            "default_value": [],
+                            "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
@@ -494,7 +485,7 @@
                                 "content-columns--rounded-shadow": "Rounded with Dropshadow",
                                 "content-columns--rounded-border": "Rounded with Border"
                             },
-                            "default_value": [],
+                            "default_value": false,
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
@@ -546,7 +537,7 @@
                                                 "col-5-12": "5\/12",
                                                 "col-7-12": "7\/12"
                                             },
-                                            "default_value": [],
+                                            "default_value": false,
                                             "allow_null": 0,
                                             "multiple": 0,
                                             "ui": 0,
@@ -576,7 +567,7 @@
                                                 "offset-5-12": "5\/12",
                                                 "offset-6-12": "6\/12"
                                             },
-                                            "default_value": [],
+                                            "default_value": false,
                                             "allow_null": 0,
                                             "multiple": 0,
                                             "ui": 0,
@@ -661,7 +652,7 @@
                                                 "col-5-12": "5\/12",
                                                 "col-7-12": "7\/12"
                                             },
-                                            "default_value": [],
+                                            "default_value": false,
                                             "allow_null": 0,
                                             "multiple": 0,
                                             "ui": 0,
@@ -691,7 +682,7 @@
                                                 "offset-5-12": "5\/12",
                                                 "offset-6-12": "6\/12"
                                             },
-                                            "default_value": [],
+                                            "default_value": false,
                                             "allow_null": 0,
                                             "multiple": 0,
                                             "ui": 0,
@@ -862,10 +853,10 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5b627859501a1",
-                            "label": "Section Name",
-                            "name": "section_name",
-                            "type": "text",
+                            "key": "field_5f5bd0d5c9303",
+                            "label": "Base",
+                            "name": "base",
+                            "type": "clone",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -874,30 +865,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5b627862501a2",
-                            "label": "Wrapper Classes",
-                            "name": "wrapper_classes",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "clone": [
+                                "group_5f5b176aef34e"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
                         },
                         {
                             "key": "field_5b627896501a7",
@@ -1019,9 +993,7 @@
                                 "btn-cta--white": "Solid White",
                                 "btn-cta--white-ghost": "White Outline"
                             },
-                            "default_value": [
-                                "btn-cta--default"
-                            ],
+                            "default_value": "btn-cta--default",
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
@@ -1086,9 +1058,7 @@
                                 "btn-cta--white": "Solid White",
                                 "btn-cta--white-ghost": "White Outline"
                             },
-                            "default_value": [
-                                "btn-cta--white-ghost"
-                            ],
+                            "default_value": "btn-cta--white-ghost",
                             "allow_null": 0,
                             "multiple": 0,
                             "ui": 0,
@@ -1262,7 +1232,7 @@
         "comments",
         "featured_image"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1599834046
+    "modified": 1599856575
 }

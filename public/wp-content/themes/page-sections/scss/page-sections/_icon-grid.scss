@@ -1,0 +1,52 @@
+.icon-grid {
+    padding: $s*10 $s*2;
+
+    &__heading {
+        @extend .page-section__heading;
+    }
+
+    &__cta {
+        margin-top: $s;
+    }
+
+    // Grid items container element
+    .icon-grid-items {
+        font-size: 0;
+        margin-bottom: $s*2;
+        padding-bottom: $s;
+    }
+
+    // Each individual grid item
+    .icon-grid-item {
+        box-sizing: border-box;
+        display: inline-block;
+        justify-content: center;
+        margin-top: $s*4;
+        padding: 0 $s;
+        vertical-align: top;
+
+        img {
+            display: inline-block;
+            width: $s*6;
+        }
+
+        &__heading {
+            font-size: $font-size--subheading;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-top: $s;
+        }
+
+        &__subheading {
+            font-size: 16px;
+            line-height: 1.2;
+            margin-top: $s*.3;
+        }
+    }
+
+    &--item-top-margin-30 {
+        .icon-grid-items__item {
+            margin-top: 30px;
+        }
+    }
+}
