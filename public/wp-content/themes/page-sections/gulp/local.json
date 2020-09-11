@@ -1,0 +1,6 @@
+{
+  "serve" : {
+    "proxy" : "http://pagesections.com",
+    "host"  : "10.0.0.134"
+  }
+}

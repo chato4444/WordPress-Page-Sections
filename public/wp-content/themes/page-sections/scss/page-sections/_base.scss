@@ -1,0 +1,15 @@
+$max-page-sections-content-width: 960px;
+
+.page-sections {
+    font-family: $font-family--primary;
+
+    section {
+        text-align: center;
+
+        .section-content {
+            width: $max-page-sections-content-width;
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+}

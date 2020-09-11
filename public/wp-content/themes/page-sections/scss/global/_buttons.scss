@@ -1,0 +1,99 @@
+.btn-cta {
+    transition: all $default-transition-time $default-transition-type;
+    background-color: $color--cta-active;
+    border-radius: 8px;
+    border: 1px solid $color--cta-active;
+    background-clip: border-box;
+    color: $color--cta-active-text;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-family--primary;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    outline: none;
+    padding: 16px 22px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:link,
+    &:visited {
+        color: $color--cta-active-text;
+    }
+
+    &:hover {
+        background-color: $color--cta-active--hover;
+        border-color: $color--cta-active--hover;
+        color: white;
+        text-shadow: none;
+
+        &:after {
+            background: $color--cta-active;
+            height: 450%;
+        }
+    }
+
+    &--ghost,
+    &--ghost:link,
+    &--ghost:visited {
+        background-color: transparent;
+        border-color: $color--cta-active;
+        color: $color--cta-active;
+    }
+    &--ghost:hover {
+        background-color: $color--cta-active;
+        color: $color--cta-active-text;
+    }
+
+    // White ghost
+    &--white,
+    &--white:link,
+    &--white:visited {
+        background-color: white;
+        border-color: #fff;
+        color: $color--cta-active;
+    }
+    &--white:hover {
+        background-color: rgba(255,255,255,.3);
+        color: #000;
+    }
+
+    // White ghost
+    &--white-ghost,
+    &--white-ghost:link,
+    &--white-ghost:visited {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+    }
+    &--white-ghost:hover {
+        background-color: rgba(255,255,255,.3);
+        border-color: rgba(255,255,255,.3);
+        color: #000;
+    }
+
+    // Grey ghost
+    &--grey-ghost,
+    &--grey-ghost:link,
+    &--grey-ghost:visited {
+        background-color: transparent;
+        border-color: #888;
+        color: #888;
+    }
+    &--white-ghost:hover {
+        background-color: rgba(255,255,255,.3);
+        color: #454545;
+    }
+
+    &--wide {
+        box-sizing: border-box;
+        width: 100%;
+
+        @include bp(min-width, $bp-xs-min) {
+            min-width: 300px;
+            width: auto;
+        }
+    }
+}
