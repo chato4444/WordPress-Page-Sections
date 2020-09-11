@@ -7,11 +7,11 @@
     <title><?php wp_title(); ?></title>
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/"/>
-    <link rel="preload" as="font" href="https://s3.amazonaws.com/icomoon.io/143548/SxScom/sxs-iconFont.woff2?fqndsy"/>
+    <link rel="preload" as="font" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
 
-    <link rel="icon" href="https://www.swingu.com/favicon-32x32.png" sizes="32x32"/>
-    <link rel="apple-touch-icon-precomposed" href="https://www.swingu.com/favicon-512x512.png"/>
-    <meta name="msapplication-TileImage" content="https://www.swingu.com/favicon-512x512.png"/>
+    <link rel="icon" href="<?php echo get_site_url(); ?>/favicon-32x32.png" sizes="32x32"/>
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_site_url(); ?>/favicon-512x512.png"/>
+    <meta name="msapplication-TileImage" content="<?php echo get_site_url(); ?>/favicon-512x512.png"/>
 
     <?php wp_head(); ?>
 </head>
