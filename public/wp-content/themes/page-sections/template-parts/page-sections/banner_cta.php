@@ -3,7 +3,7 @@
 <section class="banner-cta page-section <?php get_sub_field( 'wrapper_classes' ); ?>" style="background-image: url(<?php the_sub_field( 'background_image' ); ?>);">
 	<div class="banner-cta__content">
         <?php if ( get_sub_field( 'heading' ) ): ?>
-            <h2 class="banner-cta__heading">
+            <h2 class="banner-cta__heading" data-href="/">
                 <?php the_sub_field( 'heading' ); ?>
             </h2>
         <?php endif; ?>
