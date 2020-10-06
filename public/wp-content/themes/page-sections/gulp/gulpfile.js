@@ -7,7 +7,7 @@ let postcss          = require('gulp-postcss');
 let rename           = require('gulp-rename');
 let sass             = require('gulp-sass');
 let sourcemaps       = require('gulp-sourcemaps');
-let uglify           = require('gulp-uglify');
+let uglify           = require('gulp-uglify-es').default;
 
 gulp.task('scripts', function() {
     /**
