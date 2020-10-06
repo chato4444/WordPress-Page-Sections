@@ -21,7 +21,7 @@
 ## Page Sections Templates
 Each page section assigned to a page will load from a corresponding sub-template in `THEME_FOLDER/template-parts/page-sections`. This process starts in `THEME_FOLDER/page-sections.php`.
 
-###Example
+### Example
 A **Hero** page section has been assigned to a page and the fields have been populated. When the page loads the following occurs:
 
 - `page-sections.php` loops through all the page section layouts assigned to the page
